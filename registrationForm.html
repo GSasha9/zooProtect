@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/formStyle.css">
+</head>
+<body>
+   
+    <form id="enterForm">
+        <div id="headForm">
+            <p>Вход</p>
+            <p class="notActive">Регистрация</p>
+        </div>
+        <div id="formBody">
+            <label for="login">Логин</label>
+            <input type="text" name="login" id="login">
+            <label for="password">Пароль</label>
+            <input type="password" name="password" id="password">
+            <button id="enterForm__enter">ВОЙТИ</button>
+            <p>Забыли пароль?</p>
+        </div>
+    </form>
+
+
+    <form id="registrationForm">
+        <div id="headRegistrationForm">
+            <p>Регистрация</p>
+            <p class="notActive">Вход</p>
+        </div>
+        <div id="formBodyRegistrationForm">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name">
+            <label for="email">E-mail</label>
+            <input type="text" name="email" id="email">
+            <label for="passwordReg">Пароль</label>
+            <input type="password" name="passwordReg" id="passwordReg">
+            <label for="passRegCheck">Повторите пароль</label>
+            <input type="password" name="passRegCheck" id="passRegCheck">
+            <label for="city">Город</label>
+            <input type="text" name="city" id="city">
+            <div id="radio">
+                <label>
+                    <input type="radio" id="volontee" name="whoAreYou" value="Волонтер" checked>
+                    <span></span>
+                    Волонтер
+                </label>
+                
+                <label>
+                    <input type="radio" id="organization" name="whoAreYou" value="Организация">
+                    <span></span>
+                    Организация
+                </label>
+                
+            </div>
+            <button id="formBodyRegistrationForm__enter">Зарегестрироваться</button>
+        </div>
+        
+    </form>
+
+    <script src="./script/scriptForReg.js"></script>
+
+</body>
+</html>

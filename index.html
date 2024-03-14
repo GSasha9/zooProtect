@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <audio src="./audio/cat.m4a" autoplay loop></audio>
+            <audio src="./audio/office.m4a" loop></audio>
+            <video src="./video/videoMain.mp4" autoplay muted loop></video>
+            <img id="header__background" src="./img/headerBack.png" alt="Девушка за компьютером">
+            <img id="header__background_mobile" src="./img/headerBackMobile.png" alt="Рыжий котик">
+            <div id="header__menu_mobile">
+                <svg width="56" height="22" viewBox="0 0 56 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.795593" y="0.400879" width="55.2044" height="2.5896" fill="#1E1E1E"/>
+                    <rect x="0.795593" y="9.56677" width="55.2044" height="2.5896" fill="#1E1E1E"/>
+                    <rect x="0.795593" y="18.7537" width="55.2044" height="2.5896" fill="#1E1E1E"/>
+                    </svg>
+                    
+                   <a href="#"> <img id="logo_without_name" src="./img/logoWithoutName.png" alt="логотип для мобильной версии"> </a>                   
+            </div>
+            <div id="burger_menu">
+                <div id="burger_menu_head">
+                    <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="-1.5" x2="34.8781" y2="-1.5" transform="matrix(0.748028 0.663667 -0.748028 0.663667 1 2.02954)" stroke="black" stroke-width="3"/>
+                        <line y1="-1.5" x2="34.8781" y2="-1.5" transform="matrix(-0.748028 0.663667 0.748028 0.663667 28.7225 2.41797)" stroke="black" stroke-width="3"/>
+                        </svg>
+                        <a href="#"> <img src="./img/logoWithoutName.png" alt="логотип для мобильной версии"> </a>
+                        <button class="enterButton">ВОЙТИ</button>
+                </div>
+                <ul>
+                    <li>главная <svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_261_61)">
+                        <path d="M21.7007 8.1765C22.0947 7.78953 22.1005 7.15639 21.7135 6.76234L15.4075 0.340972C15.0205 -0.0530757 14.3874 -0.0588136 13.9933 0.328156C13.5993 0.715125 13.5935 1.34826 13.9805 1.74231L19.5858 7.4502L13.878 13.0556C13.4839 13.4425 13.4782 14.0757 13.8651 14.4697C14.2521 14.8638 14.8853 14.8695 15.2793 14.4825L21.7007 8.1765ZM4.58487 8.31429L20.9909 8.46297L21.0091 6.46305L4.603 6.31437L4.58487 8.31429Z" fill="#FF8F05"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_d_261_61" x="0.584871" y="0.041626" width="25.4151" height="22.7274" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_261_61"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_261_61" result="shape"/>
+                        </filter>
+                        </defs>
+                        </svg></li>
+                    <li>программы <svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_261_61)">
+                        <path d="M21.7007 8.1765C22.0947 7.78953 22.1005 7.15639 21.7135 6.76234L15.4075 0.340972C15.0205 -0.0530757 14.3874 -0.0588136 13.9933 0.328156C13.5993 0.715125 13.5935 1.34826 13.9805 1.74231L19.5858 7.4502L13.878 13.0556C13.4839 13.4425 13.4782 14.0757 13.8651 14.4697C14.2521 14.8638 14.8853 14.8695 15.2793 14.4825L21.7007 8.1765ZM4.58487 8.31429L20.9909 8.46297L21.0091 6.46305L4.603 6.31437L4.58487 8.31429Z" fill="#FF8F05"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_d_261_61" x="0.584871" y="0.041626" width="25.4151" height="22.7274" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_261_61"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_261_61" result="shape"/>
+                        </filter>
+                        </defs>
+                        </svg></li>
+                    <li>новости <svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_261_61)">
+                        <path d="M21.7007 8.1765C22.0947 7.78953 22.1005 7.15639 21.7135 6.76234L15.4075 0.340972C15.0205 -0.0530757 14.3874 -0.0588136 13.9933 0.328156C13.5993 0.715125 13.5935 1.34826 13.9805 1.74231L19.5858 7.4502L13.878 13.0556C13.4839 13.4425 13.4782 14.0757 13.8651 14.4697C14.2521 14.8638 14.8853 14.8695 15.2793 14.4825L21.7007 8.1765ZM4.58487 8.31429L20.9909 8.46297L21.0091 6.46305L4.603 6.31437L4.58487 8.31429Z" fill="#FF8F05"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_d_261_61" x="0.584871" y="0.041626" width="25.4151" height="22.7274" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_261_61"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_261_61" result="shape"/>
+                        </filter>
+                        </defs>
+                        </svg></li>
+                    <li>контакты <svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_261_61)">
+                        <path d="M21.7007 8.1765C22.0947 7.78953 22.1005 7.15639 21.7135 6.76234L15.4075 0.340972C15.0205 -0.0530757 14.3874 -0.0588136 13.9933 0.328156C13.5993 0.715125 13.5935 1.34826 13.9805 1.74231L19.5858 7.4502L13.878 13.0556C13.4839 13.4425 13.4782 14.0757 13.8651 14.4697C14.2521 14.8638 14.8853 14.8695 15.2793 14.4825L21.7007 8.1765ZM4.58487 8.31429L20.9909 8.46297L21.0091 6.46305L4.603 6.31437L4.58487 8.31429Z" fill="#FF8F05"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_d_261_61" x="0.584871" y="0.041626" width="25.4151" height="22.7274" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_261_61"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_261_61" result="shape"/>
+                        </filter>
+                        </defs>
+                        </svg></li>
+                </ul>
+            </div>
+            <div id="header__menu">
+                <a href="#">
+                <img id="logo_stat" src="./img/logo.png" alt="логотип">
+                <img id="logo_gif" src="./img/logo_anim.gif" alt="логотип анимация">
+                
+                </a>
+                <ul>
+                    <li><a href="#about_us">КТО МЫ</a></li>
+                    <li><a href="#programs">ПРОГРАММЫ</a></li>
+                    <li><a href="#allNews">НОВОСТИ</a></li>
+                    <li><a href="#contacts">КОНТАКТЫ</a></li>
+                </ul>
+                <button class="enterButton">ВОЙТИ</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="first_page">
+            <div class="container">
+            
+                
+                <div id="first_page__title">
+                  
+                    <h1>СОДЕЙСТВИЕ ВОЛОНТЕРАМ</h1>
+                    <button class="enterButton">ПРИСОЕДИНИТЬСЯ</button>
+            </div>
+
+            <div id="first_page__mediaControllers">
+                <svg id="first_page__mediaControllers_pause" width="16" height="28" viewBox="0 0 16 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="11.2737" y="1.11987" width="4" height="26" rx="1.5" stroke="black"/>
+                    <rect x="1.41962" y="1.13086" width="4" height="26" rx="1.5" stroke="black"/>
+                </svg>
+                <svg id="first_page__mediaControllers_play" width="24" height="29" viewBox="0 0 24 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.674 15.7808C23.633 15.1962 23.633 13.8038 22.674 13.2192L3.65588 1.62536C2.65631 1.01601 1.3751 1.73547 1.3751 2.90614L1.3751 26.0939C1.3751 27.2645 2.65631 27.984 3.65588 27.3746L22.674 15.7808Z" stroke="black"/>
+                </svg>
+                    
+                <svg id="first_page__mediaControllers_soundOn" width="35" height="25" viewBox="0 0 35 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.45831 15.2081V9.79184C1.45831 9.0183 1.7656 8.27643 2.31258 7.72945C2.85957 7.18247 3.60143 6.87518 4.37498 6.87518H8.60415C8.88928 6.87511 9.16814 6.79145 9.40623 6.63455L18.1562 0.865385C18.3761 0.720603 18.631 0.638028 18.894 0.626419C19.157 0.61481 19.4182 0.6746 19.65 0.799446C19.8817 0.924293 20.0753 1.10954 20.2103 1.33554C20.3453 1.56153 20.4166 1.81985 20.4166 2.08309V22.9168C20.4166 23.1801 20.3453 23.4384 20.2103 23.6644C20.0753 23.8904 19.8817 24.0756 19.65 24.2005C19.4182 24.3253 19.157 24.3851 18.894 24.3735C18.631 24.3619 18.3761 24.2793 18.1562 24.1346L9.40623 18.3654C9.16814 18.2085 8.88928 18.1248 8.60415 18.1248H4.37498C3.60143 18.1248 2.85957 17.8175 2.31258 17.2705C1.7656 16.7235 1.45831 15.9816 1.45831 15.2081Z" stroke="black"/>
+                    <path d="M25.5208 5.9375C25.5208 5.9375 27.7083 8.125 27.7083 11.7708C27.7083 15.4167 25.5208 17.6042 25.5208 17.6042M29.8958 1.5625C29.8958 1.5625 33.5416 5.20833 33.5416 11.7708C33.5416 18.3333 29.8958 21.9792 29.8958 21.9792" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <svg id="first_page__mediaControllers_soundOff" width="31" height="27" viewBox="0 0 31 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24.1666 16.3102L27.0833 13.2788M27.0833 13.2788L30 10.2473M27.0833 13.2788L24.1666 10.2473M27.0833 13.2788L30 16.3102" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M0.833313 16.0935V10.4641C0.833313 9.6601 1.1406 8.88904 1.68758 8.32054C2.23457 7.75203 2.97643 7.43265 3.74998 7.43265H7.97915C8.26428 7.43258 8.54314 7.34563 8.78123 7.18256L17.5312 1.18637C17.7511 1.03589 18.006 0.950064 18.269 0.937998C18.532 0.925932 18.7932 0.988075 19.025 1.11783C19.2567 1.24759 19.4503 1.44013 19.5853 1.67502C19.7203 1.90991 19.7916 2.1784 19.7916 2.45199V24.1056C19.7916 24.3792 19.7203 24.6477 19.5853 24.8825C19.4503 25.1174 19.2567 25.31 19.025 25.4397C18.7932 25.5695 18.532 25.6316 18.269 25.6196C18.006 25.6075 17.7511 25.5217 17.5312 25.3712L8.78123 19.375C8.54314 19.2119 8.26428 19.125 7.97915 19.1249H3.74998C2.97643 19.1249 2.23457 18.8055 1.68758 18.237C1.1406 17.6685 0.833313 16.8975 0.833313 16.0935Z" stroke="black"/>
+                </svg>
+            </div>
+
+            <div id="first_page__subitle">
+                <p>У НАС С ВАМИ ОДНА МИССИЯ.</p>
+                <p>ДАВАЙТЕ ПОМОГАТЬ ВМЕСТЕ!</p>
+            </div>
+            <button id="enter" class="enterButton">ВОЙТИ</button>
+        </section>
+
+        <section id="about_us">
+            <div class="container">
+                <h2>КТО МЫ</h2>
+                <p id="about_us__subtitle">Мы предоставляем ресурсы, 
+                    <span>которые помогают волонтерам сэкономить деньги,
+                     время и силы при оказании помощи животным.</span></p>
+                     <div id="about_us__balls">
+                        <p>
+                            <span>Войдите в профиль</span>
+                            <span>или зарегистрируйтесь</span>
+                            <button id="enter_tabl" class="enterButton">ВОЙТИ</button>
+                            
+                        </p>
+                        <p><span>Сообщите какая помощь вам необходима</span></p>
+                        <p><span>Получите обратную связь от наших волонтеров</span></p>
+                        <svg id='line_one' viewBox='0 0 1000 1000' xmlns='http://www.w3.org/2000/svg'>
+                            <path d='M1.48067 350.879C35.8664 376.473 103.628 409.836 173.391 432.848C243.87 456.096 316.393 468.863 358.607 468.863C487.158 468.863 426.803 422.84 414.512 412.44C393.082 397.628 375.92 401.176 371.281 402.961C312.711 425.5 383.511 456.13 460.524 466.985C533.077 477.211 610.868 470.552 599.944 401.971C585.261 309.79 792.72 332.812 830.247 305.345C849.129 291.669 846.093 276.488 842.311 269.581C834.868 254.263 786.221 198.823 803.131 181.09C819.105 166.21 837.352 187.075 864.216 185.722C893.926 181.009 932.607 147.705 889.196 113.763C880.44 107.827 871.971 106.551 864.138 113.846C856.51 120.95 860.09 129.66 874.154 134.493C915.4 148.668 944.94 34.3756 944.94 0.870906' fill='none' stroke='#FF8F05' stroke-width='3px' stroke-dasharray='0 1900' stroke-linecap='round'>
+                                <animate
+                                         attributeType='XML'
+                                         attributeName='stroke-dasharray'
+                                         from='0 1900'
+                                         to='1900 0'
+                                         dur='7.5s'
+                                         repeatCount='indefinite'/>
+                            </path>
+                        </svg>
+                        <svg id='line_tablet' width="640" height="198" viewBox="0 0 640 198" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.75183 50.9061C9.79731 49.9003 31.4132 44.3478 57.6862 40.1476C73.2469 37.6603 84.2264 23.1281 99.1748 31.1845C110.329 42.5465 91.0949 78.1281 73.0681 90.6085C51.7599 105.36 51.1623 133.128 70.6983 150.273C84.2264 158.088 97.9555 158.909 112.726 155.627C122.535 153.447 136.238 147.16 144.054 141.081C148.579 137.562 154.227 126.272 146.052 119.016C136.563 113.128 130.484 119.009 124.227 126.83C113.473 140.272 122.752 164.793 135.103 174.399C154.416 189.42 187.982 195.781 212.304 195.781C235.802 195.781 262.25 192.599 283.911 182.852C294.395 178.134 305.471 170.954 313.002 161.221C316.503 156.696 322.528 147.55 327.546 144.314C363.524 121.114 375.524 119.781 404.747 117.461C418.748 116.349 474.226 121.807 480.954 129.063C497.142 139.668 480.672 157.492 470.761 149.784C464.341 144.791 459.185 141.901 456.952 126.83C456.395 116.225 454.227 111.201 460.859 99.4798C468.675 91.6653 477.606 87.7584 490.442 84.9676C508.862 83.2928 532.416 91.5519 551.566 92.9703C578.736 94.9829 600.33 88.3967 624.044 74.4472C682.191 27.781 542.793 10.2006 541.46 2.20044" stroke="#FF8F05" stroke-width="2.00019" stroke-miterlimit="22.9256" stroke-linecap="round"/>
+                            <animate
+                                         attributeType='XML'
+                                         attributeName='stroke-dasharray'
+                                         from='0 1900'
+                                         to='1900 0'
+                                         dur='7.22s'
+                                         repeatCount='indefinite'/>
+                        </svg>
+                     </div>   
+            </div>
+        </section>
+
+        <section id="programs">
+            <h2>ПРОГРАММЫ</h2>
+            <div id="programs__cards">
+                <div class="programs__card">
+                    <img src="./img/card1.jpg" alt="map">
+                    <h4>Интерактивная карта</h4>
+                    <p class="card_subtlt">Карта для поиска единомышленников в вашем регионе</p>
+                </div>
+
+                <div class="programs__card">
+                    <img src="./img/card2.jpg" alt="material aid">
+                    <h4>Материальная помощь</h4>
+                    <p class="card_subtlt">Помогаем оплатить подтвержденные расходы на лечение животных</p>
+                </div>
+
+                <div class="programs__card">
+                    <img src="./img/card3.jpg" alt="reabilitation">
+                    <h4>Передержка, реабилитация животных</h4>
+                        <p class="card_subtlt">Широкая сеть волонтеров готовых помочь</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="allNews">
+            <div class="container">
+                <h2>НОВОСТИ</h2>
+                <div id="allNews__arrows">
+                    <svg id="arrow_left" width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.85828 16.8184L19.3055 0.807617C19.4471 0.685547 19.6278 0.617188 19.8182 0.617188H24.1395C24.5009 0.617188 24.6669 1.06641 24.3934 1.30078L7.29383 16.1445H35.868C36.0829 16.1445 36.2587 16.3203 36.2587 16.5352V19.4648C36.2587 19.6797 36.0829 19.8555 35.868 19.8555H7.29871L24.3983 34.6992C24.6718 34.9385 24.5057 35.3828 24.1444 35.3828H19.6766C19.5839 35.3828 19.4911 35.3486 19.4227 35.2852L0.85828 19.1816C0.689243 19.0346 0.553707 18.8531 0.460831 18.6493C0.367954 18.4454 0.319893 18.224 0.319893 18C0.319893 17.776 0.367954 17.5546 0.460831 17.3507C0.553707 17.1469 0.689243 16.9654 0.85828 16.8184Z" fill="black"/>
+                    </svg>
+                    <svg id="arrow_right" width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M36.1412 16.8184L17.694 0.807617C17.5524 0.685547 17.3717 0.617188 17.1813 0.617188H12.86C12.4987 0.617188 12.3326 1.06641 12.6061 1.30078L29.7057 16.1445H1.13147C0.916626 16.1445 0.740845 16.3203 0.740845 16.5352V19.4648C0.740845 19.6797 0.916626 19.8555 1.13147 19.8555H29.7008L12.6012 34.6992C12.3278 34.9385 12.4938 35.3828 12.8551 35.3828H17.3229C17.4156 35.3828 17.5084 35.3486 17.5768 35.2852L36.1412 19.1816C36.3103 19.0346 36.4458 18.8531 36.5387 18.6493C36.6316 18.4454 36.6796 18.224 36.6796 18C36.6796 17.776 36.6316 17.5546 36.5387 17.3507C36.4458 17.1469 36.3103 16.9654 36.1412 16.8184Z" fill="black"/>
+                    </svg>
+                </div>
+
+                <div id="allNews__news_slider">
+                    
+                    
+                    
+                </div>
+
+                
+
+            </div>
+        </section>
+
+        <section id="contacts">
+            <div class="container">
+                <h2>КОНТАКТЫ</h2>
+                <p>Карта единомышленников</p>
+                <div id="contacts__allAboutMap">
+                    <div id="contacts__map">
+                        <img id="minsk" src="./img/minsk.png">
+                        <img id="brest" src="./img/brest.png">
+                        <img id="grodno" src="./img/grodno.png">
+                        <img id="vitebsk" src="./img/vitebsk.png">
+                        <img id="mogilev" src="./img/mogilev.png">
+                        <img id="gomel" src="./img/gomel.png">
+                    </div>
+                    <div id="contacts__points">
+                        <div id="point1" class="geoteg">
+                            <svg  width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="5.66602" cy="5.44385" r="4.5" fill="#FF8F05" stroke="#9BA196"/>
+                            </svg>
+                        </div>
+
+                        <div id="point2" class="geoteg">
+                            <svg  width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="5.66602" cy="5.44385" r="4.5" fill="#FF8F05" stroke="#9BA196"/>
+                            </svg>
+                        </div>
+
+                        <div id="point3" class="geoteg">
+                            <svg  width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="5.66602" cy="5.44385" r="4.5" fill="#FF8F05" stroke="#9BA196"/>
+                            </svg>
+                        </div>
+
+                        <div id="point4" class="geoteg">
+                            <svg  width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="5.66602" cy="5.44385" r="4.5" fill="#FF8F05" stroke="#9BA196"/>
+                            </svg>
+                        </div>
+
+                        <div id="point5" class="geoteg">
+                            <svg  width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="5.66602" cy="5.44385" r="4.5" fill="#FF8F05" stroke="#9BA196"/>
+                            </svg>
+                        </div>
+
+                        <div id="point6" class="geoteg">
+                            <svg  width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="5.66602" cy="5.44385" r="4.5" fill="#FF8F05" stroke="#9BA196"/>
+                            </svg>
+                        </div>
+
+                        <div id="point7" class="geoteg">
+                            <svg  width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="5.66602" cy="5.44385" r="4.5" fill="#FF8F05" stroke="#9BA196"/>
+                            </svg>
+                        </div>
+
+                        <div id="point8" class="geoteg">
+                            <svg  width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="5.66602" cy="5.44385" r="4.5" fill="#FF8F05" stroke="#9BA196"/>
+                            </svg>
+                        </div>
+
+                        <div id="point9" class="geoteg">
+                            <svg  width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="5.66602" cy="5.44385" r="4.5" fill="#FF8F05" stroke="#9BA196"/>
+                            </svg>
+                        </div>
+
+                        <div id="point10" class="geoteg">
+                            <svg  width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="5.66602" cy="5.44385" r="4.5" fill="#FF8F05" stroke="#9BA196"/>
+                            </svg>
+                        </div>
+
+                        <div id="point11" class="geoteg">
+                            <svg  width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="5.66602" cy="5.44385" r="4.5" fill="#FF8F05" stroke="#9BA196"/>
+                            </svg>
+                        </div>
+
+                        
+                    </div>
+                    <svg id="solid_line" width="170" height="2" viewBox="0 0 170 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="1" x2="170" y2="1" stroke="#FF8F05" stroke-width="2"/>
+                    </svg>
+                    <div id="contacts__card">
+                        
+                        <div id="contacts__card_info">
+                            <div>
+                                <img src="./img/volontee/7mogilevcentr.png" alt="Фото организации">
+                            </div>
+                            <div>
+                                <p id="contacts__card_info_title">Волонтер/организация</p>
+                                <p id="contacts__card_info_descr">Имя, навазние</p>
+                            
+                            </div>
+                        </div>
+                </div>
+                        
+                </div>
+            </div>
+        </section>
+
+       
+    </main>
+    <footer>
+        <div id="footer__menu_social">
+            <div id="footer__menu">
+                <ul>
+                    <li><a href="#about_us">КТО МЫ</a></li>
+                    <li><a href="#programs">ПРОГРАММЫ</a></li>
+                    <li><a href="#allNews">НОВОСТИ</a></li>
+                    <li><a href="#contacts">КОНТАКТЫ</a></li>
+                </ul>
+            </div>
+            <div id="footer__social">
+                <a href="#header__menu"><img id="logotype" src="./img/logo.png" alt="логотип"></a>
+                <div id="footer__social_icons">
+                    <svg id="telegram" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.8017 0.900391C7.5217 0.900391 0.801697 7.62039 0.801697 15.9004C0.801697 24.1804 7.5217 30.9004 15.8017 30.9004C24.0817 30.9004 30.8017 24.1804 30.8017 15.9004C30.8017 7.62039 24.0817 0.900391 15.8017 0.900391ZM22.7617 11.1004C22.5367 13.4704 21.5617 19.2304 21.0667 21.8854C20.8567 23.0104 20.4367 23.3854 20.0467 23.4304C19.1767 23.5054 18.5167 22.8604 17.6767 22.3054C16.3567 21.4354 15.6067 20.8954 14.3317 20.0554C12.8467 19.0804 13.8067 18.5404 14.6617 17.6704C14.8867 17.4454 18.7267 13.9504 18.8017 13.6354C18.8121 13.5877 18.8107 13.5381 18.7977 13.4911C18.7846 13.444 18.7602 13.4009 18.7267 13.3654C18.6367 13.2904 18.5167 13.3204 18.4117 13.3354C18.2767 13.3654 16.1767 14.7604 12.0817 17.5204C11.4817 17.9254 10.9417 18.1354 10.4617 18.1204C9.9217 18.1054 8.9017 17.8204 8.1367 17.5654C7.1917 17.2654 6.4567 17.1004 6.5167 16.5754C6.5467 16.3054 6.9217 16.0354 7.6267 15.7504C12.0067 13.8454 14.9167 12.5854 16.3717 11.9854C20.5417 10.2454 21.3967 9.94539 21.9667 9.94539C22.0867 9.94539 22.3717 9.97539 22.5517 10.1254C22.7017 10.2454 22.7467 10.4104 22.7617 10.5304C22.7467 10.6204 22.7767 10.8904 22.7617 11.1004Z" fill="black"/>
+                    </svg>
+                    <svg id="instagram" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.17672 0.316895H21.4267C26.0934 0.316895 29.8851 4.10856 29.8851 8.77523V21.0252C29.8851 23.2685 28.9939 25.4199 27.4077 27.0062C25.8214 28.5924 23.67 29.4836 21.4267 29.4836H9.17672C4.51005 29.4836 0.718384 25.6919 0.718384 21.0252V8.77523C0.718384 6.53194 1.60953 4.38053 3.19577 2.79428C4.78202 1.20804 6.93343 0.316895 9.17672 0.316895ZM8.88505 3.23356C7.49267 3.23356 6.15731 3.78669 5.17274 4.77125C4.18817 5.75582 3.63505 7.09118 3.63505 8.48356V21.3169C3.63505 24.219 5.98297 26.5669 8.88505 26.5669H21.7184C23.1108 26.5669 24.4461 26.0138 25.4307 25.0292C26.4153 24.0446 26.9684 22.7093 26.9684 21.3169V8.48356C26.9684 5.58148 24.6205 3.23356 21.7184 3.23356H8.88505ZM22.958 5.42106C23.4414 5.42106 23.9051 5.61312 24.247 5.95498C24.5888 6.29685 24.7809 6.76051 24.7809 7.24398C24.7809 7.72745 24.5888 8.19111 24.247 8.53298C23.9051 8.87484 23.4414 9.0669 22.958 9.0669C22.4745 9.0669 22.0108 8.87484 21.669 8.53298C21.3271 8.19111 21.1351 7.72745 21.1351 7.24398C21.1351 6.76051 21.3271 6.29685 21.669 5.95498C22.0108 5.61312 22.4745 5.42106 22.958 5.42106ZM15.3017 7.60856C17.2356 7.60856 19.0903 8.37679 20.4577 9.74424C21.8252 11.1117 22.5934 12.9664 22.5934 14.9002C22.5934 16.8341 21.8252 18.6888 20.4577 20.0562C19.0903 21.4237 17.2356 22.1919 15.3017 22.1919C13.3679 22.1919 11.5132 21.4237 10.1457 20.0562C8.77828 18.6888 8.01005 16.8341 8.01005 14.9002C8.01005 12.9664 8.77828 11.1117 10.1457 9.74424C11.5132 8.37679 13.3679 7.60856 15.3017 7.60856ZM15.3017 10.5252C14.1414 10.5252 13.0286 10.9862 12.2081 11.8066C11.3877 12.6271 10.9267 13.7399 10.9267 14.9002C10.9267 16.0606 11.3877 17.1734 12.2081 17.9938C13.0286 18.8143 14.1414 19.2752 15.3017 19.2752C16.462 19.2752 17.5748 18.8143 18.3953 17.9938C19.2158 17.1734 19.6767 16.0606 19.6767 14.9002C19.6767 13.7399 19.2158 12.6271 18.3953 11.8066C17.5748 10.9862 16.462 10.5252 15.3017 10.5252Z" fill="black"/>
+                    </svg>
+                    <svg id="facebook" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30.8017 15.9004C30.8017 7.62039 24.0817 0.900391 15.8017 0.900391C7.5217 0.900391 0.801697 7.62039 0.801697 15.9004C0.801697 23.1604 5.9617 29.2054 12.8017 30.6004V20.4004H9.8017V15.9004H12.8017V12.1504C12.8017 9.25539 15.1567 6.90039 18.0517 6.90039H21.8017V11.4004H18.8017C17.9767 11.4004 17.3017 12.0754 17.3017 12.9004V15.9004H21.8017V20.4004H17.3017V30.8254C24.8767 30.0754 30.8017 23.6854 30.8017 15.9004Z" fill="black"/>
+                    </svg>
+                </div>
+            </div>
+          
+        </div>
+        <div id="footer__subscribe">
+            <p>Подписаться на рассылку</p>
+            <input type="text" name="subscribe" placeholder="Ваш e-mail">
+            <button>ОТПРАВИТЬ</button>
+        </div>
+        
+    </footer>
+
+    <script src="./script/script.js"></script>
+    
+</body>
+</html>

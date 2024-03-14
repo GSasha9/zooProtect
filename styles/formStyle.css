@@ -1,0 +1,384 @@
+body{
+    margin: auto;
+    font-family: 'Bona Nova', serif;
+    font-family: 'Kanit', sans-serif;
+    width: 100%;
+    max-width: 1346px; 
+    background-image: linear-gradient(90deg, #f0f0ef, #CACEBC, #f0f0ef,#d9e4b1b0);
+    animation: gradient 15s ease infinite;
+    padding-top: 40px;
+    height: 100%;
+    max-height: 786px;
+}
+
+@keyframes gradient {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
+
+
+#enterForm{
+    width: 40vw;
+    height: 48vw;
+    border-radius: 7px;
+    background-color: #E8EDED;
+    margin: auto;
+    box-shadow: 7px 7px 6px 2px rgba(141, 141, 141, .2);
+    visibility: visible;
+}
+
+#headForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 9vw;
+    font-size: 2.5vw;
+    font-family: 'Bona Nova', serif;
+    padding-top: 1vw;
+}
+
+#headForm>p{
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
+#headForm>p:first-of-type{
+    border-bottom: 2px solid #FF8F05;
+}
+
+#headForm>p:last-of-type{
+    color: rgb(122, 122, 122);
+}
+
+#headForm>p:last-of-type:hover{
+    border-bottom: 2px solid #818772;
+}
+
+#formBody{
+    display: flex;
+    flex-direction: column;
+}
+
+#formBody>label{
+    font-family: 'Bona Nova', serif;
+    font-size: 1.4vw;
+    margin-left: 6vw;
+    margin-top: 4vw;
+}
+
+#formBody>input{
+    font-family: sans-serif;
+    margin-left: 6vw;
+    margin-top: 2vw;
+    width: 27vw;
+    border: none;
+    background-color: #E8EDED;
+    border-bottom: 1px gray solid;
+    font-size: 1.5vw;
+}
+
+#dateOfBirth:focus::placeholder{
+    visibility: hidden;
+}
+
+#formBody>input:focus{
+    outline: none;
+}
+
+#enterForm__enter{
+    margin-top: 6.3vw;
+    width: 26.5vw;
+    height: 4vw;
+    background-color: #B3BCA7;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.6vw;
+    border: none;
+    border-radius: 7px;
+    margin-left: 6.5vw;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#enterForm__enter:hover{
+    border: #FF8F05 2px solid;
+}
+
+#enterForm__enter:active{
+    background: #E8EDED;
+    border: #FF8F05 2px solid;
+}
+
+#enterForm__enter+p{
+    text-align: center;
+    font-size: 1.2vw;
+    margin-top: 1.7vw;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+}
+
+#enterForm__enter+p:hover{
+    color: #FF8F05;
+}
+
+#registrationForm{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 34vw;
+    height: fit-content;
+    border-radius: 7px;
+    background-color: #E8EDED;
+    box-shadow: 7px 7px 6px 2px rgba(141, 141, 141, .2);
+    visibility: hidden;
+    margin-bottom: 100px;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+#headRegistrationForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 8vw;
+    font-size: 2.0vw;
+    font-family: 'Bona Nova', serif;
+    padding-top: 2vw;
+    
+}
+
+#headRegistrationForm>p{
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
+#headRegistrationForm>p:first-of-type{
+    border-bottom: 2px solid #FF8F05;
+}
+
+#headRegistrationForm>p:last-of-type{
+    color: rgb(122, 122, 122);
+}
+
+#headRegistrationForm>p:last-of-type:hover{
+    border-bottom: 2px solid #818772;
+}
+
+#formBodyRegistrationForm{
+    display: flex;
+    flex-direction: column;
+}
+
+#formBodyRegistrationForm>label{
+    font-family: 'Bona Nova', serif;
+    font-size: 1.2vw;
+    margin-left: 5.8vw;
+    margin-top: 1.5vw;
+}
+
+#formBodyRegistrationForm>input{
+    font-family: sans-serif;
+    margin-left: 5.8vw;
+    margin-top: 0.6vw;
+    width: 22.7vw;
+    border: none;
+    background-color: #E8EDED;
+    border-bottom: 1px gray solid;
+    font-size: 1.5vw;
+    font-weight: 300;
+    margin-bottom: 0.5vw;
+}
+
+#formBodyRegistrationForm>input:focus{
+    outline: none;
+}
+
+#radio{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Bona Nova', serif;
+    font-size: 1.2vw;
+    margin-top: 3vw;
+    justify-content: center;
+    position: relative;
+    gap: 7vw;
+    margin-left: -1vw;
+    margin-bottom: 1vw;
+}
+
+#radio>label>span{
+    display: inline-block;
+    width: 1vw;
+    height: 1vw;
+    background-color: #B3BCA7;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px transparent solid;
+}
+
+#radio>label>span:hover{
+    border: 1px #FF8F05 solid;
+}
+
+#radio>label>input:checked+span{
+    background-color: #FF8F05;
+}
+
+
+#volontee{
+    visibility: hidden;
+}
+
+#organization{
+    visibility: hidden;
+}
+
+#formBodyRegistrationForm__enter{
+    margin-top: 3.5vw;
+    width: 23.3vw;
+    height: 3.6vw;
+    background-color: #B3BCA7;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.3vw;
+    border: none;
+    border-radius: 7px;
+    margin-left: 5.5vw;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 2vw;
+}
+
+#formBodyRegistrationForm__enter:hover{
+    border: #FF8F05 2px solid;
+}
+
+#formBodyRegistrationForm__enter:active{
+    background: #E8EDED;
+    border: #FF8F05 2px solid;
+}
+
+.alert{
+    display: block;
+    color: #FF8F05;
+    background-color: transparent;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    font-size: 1.2vw;
+
+}
+
+
+
+
+
+
+
+
+
+@media  all and  (max-width: 625px){
+
+#enterForm{
+    width: 80vw;
+    height: 92vw;
+ 
+}
+
+#headForm{
+    column-gap: 18vw;
+    font-size: 5vw;
+    padding-top: 2vw;
+}
+
+#formBody>label{
+    font-size: 2.8vw;
+    margin-left: 12vw;
+    margin-top: 8vw;
+}
+
+#formBody>input{
+    margin-left: 12vw;
+    margin-top: 4vw;
+    width: 54vw;
+    font-size: 3vw;
+    font-weight: 300;
+}
+
+#enterForm__enter{
+    margin-top: 12.6vw;
+    width: 53vw;
+    height: 8vw;
+    font-size: 3.2vw;
+    margin-left: 13vw;
+}
+
+#enterForm__enter+p{
+    font-size: 2.4vw;
+    margin-top: 3.4vw;
+}
+
+#registrationForm{
+    width: 68vw;
+    height: fit-content;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+#headRegistrationForm{
+    column-gap: 16vw;
+    font-size: 4.0vw;
+    padding-top: 4vw;
+}
+
+#formBodyRegistrationForm>label{
+    font-size: 2.4vw;
+    margin-left: 11.5vw;
+    margin-top: 3vw;
+}
+
+#formBodyRegistrationForm>input{
+    margin-left: 11.6vw;
+    margin-top: 1.2vw;
+    width: 46.8vw;
+    font-size: 3vw;
+    margin-bottom: 1vw;
+}
+
+#radio{
+    font-size: 2.4vw;
+    margin-top: 6vw;
+    gap: 14vw;
+    margin-left: -2vw;
+}
+
+#radio>label>span{
+    width: 2vw;
+    height: 2vw;
+}
+
+#formBodyRegistrationForm__enter{
+    margin-top: 7vw;
+    width: 46.6vw;
+    height: 7.2vw;
+    font-size: 2.6vw;
+    margin-left: 11vw;
+    margin-bottom: 4vw;
+}
+
+.alert{
+    display: block;
+    color: #FF8F05;
+    background-color: transparent;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    font-size: 2.4vw;
+
+}
+
+}
