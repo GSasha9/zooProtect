@@ -612,9 +612,8 @@ video{
     position: relative;
     display: flex;
     margin-top: 34vw;
-    margin-bottom: -29.6vw;
+    margin-bottom: -290px;
     margin-left: 89.4vw;
-    
 }
 
 #arrow_left{
@@ -1430,6 +1429,8 @@ footer{
         font-size: 14px;
         background-color: #B3BCA7;
         border-radius: 2px;
+        text-align: center;
+        color: rgb(28, 28, 28);
     }
 
     #burger_menu{

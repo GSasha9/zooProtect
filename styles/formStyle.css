@@ -104,6 +104,7 @@ body{
     margin-left: 6.5vw;
     font-weight: 500;
     cursor: pointer;
+    color: rgb(28, 28, 28);
 }
 
 #enterForm__enter:hover{
@@ -253,6 +254,7 @@ body{
     font-weight: 500;
     cursor: pointer;
     margin-bottom: 2vw;
+    color: rgb(28, 28, 28);
 }
 
 #formBodyRegistrationForm__enter:hover{
