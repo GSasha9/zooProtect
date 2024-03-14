@@ -1431,6 +1431,7 @@ footer{
         border-radius: 2px;
         text-align: center;
         color: rgb(28, 28, 28);
+        padding: 0;
     }
 
     #burger_menu{
