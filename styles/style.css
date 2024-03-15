@@ -5,6 +5,33 @@ width: 100%;
 max-width: 1346px; 
 }
 
+.areaForLoader {
+    background-image: linear-gradient(90deg, #f0f0ef, #CACEBC, #f0f0ef,#d9e4b1);
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    z-index: 9999;
+    opacity: 1;
+    animation: gradient 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .preloader>img{
+    margin: auto;
+    margin-top: 40vh;
+    width: 30vw;
+  }
+
+  .hide{
+    visibility: hidden;
+    opacity: 0;
+  }
+
 .container{
     margin: 0 auto;
 }
@@ -750,6 +777,10 @@ video{
     transition: 1s ease 1s;
 }
 
+#points_for_mobile{
+    display: none;
+}
+
 #geoteg1{
     opacity: 1 !important;
 }
@@ -1015,6 +1046,10 @@ footer{
 
     video{
         display: none;
+    }
+
+    header{
+        margin-top: 1.5vw;
     }
 
     #header__background{
@@ -1374,6 +1409,7 @@ footer{
     body{
         width: 360px;
         margin: auto;
+        background-image: linear-gradient(90deg, #f0f0ef, #CACEBC, #f0f0ef,#d9e4b1b0);
     }
 
     header{
@@ -1451,6 +1487,14 @@ footer{
     #burger_menu_head{
         display: flex;
         margin-left: 23px;
+    }
+
+    #header__menu_mobile>svg{
+        position: fixed;
+    }
+
+    #header__menu_mobile>a{
+        margin-left: 55px;
     }
 
     #burger_menu_head>svg:hover>line{
@@ -1555,7 +1599,6 @@ footer{
     #programs{
         margin-top: -325px;
         width: 360px;
-        background-image: linear-gradient(90deg, #f0f0ef, #CACEBC, #f0f0ef,#d9e4b1b0);
         animation: none;
         margin-bottom: -117px;
     }
@@ -1675,7 +1718,6 @@ footer{
     #contacts {
         padding-top: 50px;
         width: 360px;
-        background-image: linear-gradient(90deg, #f0f0ef, #CACEBC, #f0f0ef,#d9e4b1b0);
         animation: none;
         height: 462px;
     }
@@ -1702,6 +1744,56 @@ footer{
 
     #contacts__allAboutMap{
         margin-top: -20px;
+    }
+
+    #points_for_mobile{
+        display: initial;
+        position: relative;
+    }
+
+    #points_for_mobile>ul{
+        list-style: none;
+    }
+
+    #points_for_mobile>ul>li{
+        position: absolute;
+        display: flex;
+        gap: 6px;
+    }
+
+    #points_for_mobile>ul>li>svg{
+        margin-top: 4px;
+    }
+
+    #point_mob_vitebsk{
+        top: 82px;
+        left: 157px;
+    }
+
+    #point_mob_grodno{
+        top: 153px;
+        left: 67px;
+    }
+
+    #point_mob_minsk{
+        top: 144px;
+        left: 152px;
+        z-index: 10;
+    }
+
+    #point_mob_mogilev{
+        top: 161px;
+        left: 229px;
+    }
+
+    #point_mob_gomel{
+        top: 220px;
+        left: 205px;
+    }
+
+    #point_mob_brest{
+        top: 215px;
+        left: 82px;
     }
 
     #vitebsk {
@@ -1756,7 +1848,6 @@ footer{
     }
 
     footer {
-        background-image: linear-gradient(90deg, #f0f0ef, #CACEBC, #f0f0ef, #d9e4b1b0);
         animation: none;
         width: 360px;
         flex-direction: column;
