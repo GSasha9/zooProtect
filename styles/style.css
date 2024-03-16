@@ -1433,6 +1433,7 @@ footer{
 
     #header__menu_mobile>svg{
         cursor: pointer;
+        z-index: 10;
     }
 
     #header__menu_mobile>svg:hover>rect{
@@ -1497,8 +1498,16 @@ footer{
         margin-left: 55px;
     }
 
+    #burger_menu_head>svg{
+        cursor: pointer;
+    }
+
     #burger_menu_head>svg:hover>line{
         stroke: #FF8F05;
+    }
+
+    #burger_menu_head>svg:active>line{
+        stroke: #ffffff;
     }
 
     #burger_menu_head>a{
@@ -1514,6 +1523,8 @@ footer{
         border-radius: 2px;
         border: 2px transparent solid;
         cursor: pointer;
+        padding: 0px;
+        color: rgb(40, 40, 40);
     }
 
     #burger_menu_head>button:hover{
@@ -1720,6 +1731,7 @@ footer{
         width: 360px;
         animation: none;
         height: 462px;
+        position: relative;
     }
 
     #contacts>div>h2 {
@@ -1749,6 +1761,7 @@ footer{
     #points_for_mobile{
         display: initial;
         position: relative;
+        font-size: 12px;
     }
 
     #points_for_mobile>ul{
@@ -1759,39 +1772,50 @@ footer{
         position: absolute;
         display: flex;
         gap: 6px;
+        cursor: pointer;
+    }
+
+    #points_for_mobile>ul>li:hover{
+        color: #FF8F05;
+        transform: scale(1.2);
+    }
+
+    #points_for_mobile>ul>li:active{
+        color: #FF8F05;
+        transform: scale(1.2);
     }
 
     #points_for_mobile>ul>li>svg{
         margin-top: 4px;
     }
 
-    #point_mob_vitebsk{
+    #point_mob_vitebsk2{
         top: 82px;
         left: 157px;
     }
 
-    #point_mob_grodno{
+    #point_mob_grodno4{
         top: 153px;
         left: 67px;
     }
 
-    #point_mob_minsk{
+    #point_mob_minsk5{
         top: 144px;
         left: 152px;
         z-index: 10;
     }
 
-    #point_mob_mogilev{
+    #point_mob_mogilev6{
         top: 161px;
         left: 229px;
     }
 
-    #point_mob_gomel{
+    #point_mob_gomel3{
         top: 220px;
         left: 205px;
     }
 
-    #point_mob_brest{
+    #point_mob_brest1{
         top: 215px;
         left: 82px;
     }
@@ -1845,6 +1869,50 @@ footer{
 
     #contacts__card{
         display: none;
+    }
+
+    #infoMob{
+        position: absolute;
+        left: 0px;
+        top: 234px;
+        width: 360px;
+        background-color: #CACEBC;
+        height: 100px;
+        text-align: center;
+        z-index: 40;
+        height: fit-content;
+        opacity: 1;
+    }
+
+    #infoMob>p{
+        color: black;
+        font-size: 14px;
+    }
+
+    #infoMob>p>a{
+        color: rgb(24, 24, 24);
+    }
+
+    #infoMob>p>a:hover{
+        color: #FF8F05;
+    }
+
+    #infoMob>p>a:active{
+        color: #f0f0f0;
+    }
+
+    #infoMobCross{
+        width: 20px;
+        cursor: pointer;
+        border: transparent 1px solid;
+    }
+
+    #infoMobCross:hover{
+        border: #ff5100 1px solid;
+    }
+
+    #infoMobCross:active{
+        border: #ff5100 1px solid;
     }
 
     footer {

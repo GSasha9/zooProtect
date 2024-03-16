@@ -1,7 +1,7 @@
 //предзагрузчик, запускаем видео, аудио при загрузке страницы
 
 const video = document.querySelector("video");
-const audio = document.querySelectorAll("audio");
+const audio = [...document.querySelectorAll("audio")];
 
 document.body.onload = function(){
     setTimeout(function(){
@@ -10,7 +10,7 @@ document.body.onload = function(){
     {
         areaForLoader.classList.add('hide');
         video.play();
-        audio.play();
+        audio.forEach((elem)=> elem.play());
     }
     }, 3000);
   }
@@ -102,7 +102,7 @@ allPoints.forEach(function(el){
 
 const arrOfPicForCard = ['0','./img/volontee/1vitebskDobrik.png','./img/volontee/2vitebskIrina.png','./img/volontee/3vitebskVetCentr.png','./img/volontee/4minskzooch.png','./img/volontee/5mogilevman.png','./img/volontee/6minskKsenya.png','./img/volontee/7mogilevcentr.png','./img/volontee/8grodnoSeredce.png','./img/volontee/9mogilevOlga.png','./img/volontee/10bresrDobr.png','./img/volontee/11gomel.png'];
 const arrOfNamesForCard = ['0','Приют "Добрик"','Ирина. Волонтер','Ветеринарный центр доктора Базылевского А. А','Зоошанс','Дмитрий. Волонтер','Ксения. Волонтер','Ветзооцентр','Преданное сердце','Ольга. Волонтер','Приют "Доброта"','"Подари им шанс"'];
-const arrOfDescripForCard = ['0','г. Витебск, Старобабинический тракт 29. <span>тел. +375(33)336-78-77</span>','Помощь в финансирования медицинских расходов на лечение животных в Витебске.<span>тел. +375(29)345-67-09</span>','г. Витебск, ул. Чкалова, 68.<span>тел. +375(29)344-56-78</span>','г. Минск, ул. Якуба Коласа 50/1. <span>тел. +375(29)191-10-92</span>','помощь в поиске волонтеров для временной передержки животных в Могилеве.<span>тел. +375(29)191-10-92</span>','помощь с кормом для животных в Минске.<span>тел. +375(29)345-65-43</span> ','г.Могилев, ул. Королёва 8<span>тел. +375(29)191-10-92</span>','predannoeserdce.by, г. Гродно','Организация медицинской помощи животным в Могилеве.<span>тел. +375(44)453-78-77</span> ','г. Брест, Ковельская улица 1.<span>тел. +375(16)295-81-30</span>','г. Брест, тел. +375(44)673-00-30'];
+const arrOfDescripForCard = ['0','г. Витебск, Старобабинический тракт 29. <span>тел. +375(33)336-78-77</span>','Помощь в финансирования медицинских расходов на лечение животных в Витебске.<span>тел. +375(29)345-67-09</span>','г. Витебск, ул. Чкалова, 68.<span>тел. +375(29)344-56-78</span>','г. Минск, ул. Якуба Коласа 50/1. <span>тел. +375(29)191-10-92</span>','помощь в поиске волонтеров для временной передержки животных в Могилеве.<span>тел. +375(29)191-10-92</span>','помощь с кормом для животных в Минске.<span>тел. +375(29)345-65-43</span> ','г.Могилев, ул. Королёва 8<span>тел. +375(29)191-10-92</span>','predannoeserdce.by, г. Гродно','Организация медицинской помощи животным в Могилеве.<span>тел. +375(44)453-78-77</span> ','г. Брест, Ковельская улица 1.<span>тел. +375(16)295-81-30</span>','instagram: podari_im_shans_gomel'];
 
 function showInfoCard(el){
 //убираем все значки геотега, если они есть
@@ -269,7 +269,7 @@ let coords = burgerMenuLabel.getBoundingClientRect();
 console.log(coords);
 hiddenMenu.style.top = coords.top-70 + scrollY + "px";
 console.log(scrollY);
-hiddenMenu.style.left = coords.left-100 + "px";
+hiddenMenu.style.left = "0px";
 }
 
 function closeBurgerMenu(){
@@ -280,13 +280,82 @@ function closeBurgerMenu(){
 //закрытие бургер меню при переходе по ссылке из этого меню
 
 const burgerMenuRef = [...document.querySelectorAll("#burger_menu>ul>li")];
-burgerMenuRef.forEach((elem)=> elem.addEventListener('click',hideBurgerMenuIfLeave ));
+burgerMenuRef.forEach((elem)=> elem.addEventListener('click',closeBurgerMenu));
 
-function hideBurgerMenuIfLeave(){
-    const burgerMenu = document.querySelector('#burger_menu');
-    burgerMenu.style.left = '-500px';
+
+
+//закрытие бургер-меню при скорлле страницы, клике вне страницы
+window.addEventListener('scroll', closeBurgerMenu);
+
+//функция для выключения звука при переходе на планшет
+window.addEventListener('resize', soundOffIfTablet);
+
+function soundOffIfTablet(){
+    if(window.innerWidth < 1020){
+        audio.forEach((elem)=> elem.pause());
+    }
 }
 
+
+//работа карты в мобильной версии
+
+let cities = [...document.querySelectorAll('#points_for_mobile>ul>li')];
+cities.forEach(function(el){
+    el.addEventListener('click', function() { 
+        showInfoMob(el); 
+    });
+});
+
+
+
+function showInfoMob(el){
+        let cityId = el.id;
+        let number = el.id.split('').at(-1);
+        console.log(number);
+        let infoMob = document.createElement('div');
+        infoMob.id = "infoMob";
+        let cross = document.createElement('img');
+        cross.setAttribute('src', './img/cross.png');
+        cross.id = "infoMobCross";
+        cross.addEventListener('click', function() {
+            infoMob.style.display = 'none';
+            });
+        infoMob.appendChild(cross);
+        let infoMobText = document.createElement('p');
+        
+    
+        switch (number) {
+            case '1':
+            infoMobText.innerHTML = "<a href=\"https://www.instagram.com/podari_im_shans_gomel/\">"+arrOfNamesForCard[11]+"</a>";
+            break;
+
+            case '2':
+            infoMobText.innerHTML = "<a href=\"https://dobrik.by\">"+arrOfNamesForCard[1]+"</a>" + "," + "<br/>" + "<p>"+arrOfNamesForCard[2] + "," +arrOfDescripForCard[2]+ "</p>" + "<a href=\"https://minsk.vet-centre.by\">"+arrOfNamesForCard[3]+"</a>";
+            break;
+
+            case '3':
+            infoMobText.innerHTML = "<a href=\"https://www.instagram.com/priutdobrota/\">"+arrOfNamesForCard[10]+"</a>";
+            break;
+
+            case '4':
+            infoMobText.innerHTML = "<a href=\"https://predannoeserdce.by\">"+arrOfNamesForCard[8]+"</a>";
+            break;
+
+            case '5':
+            infoMobText.innerHTML = "<a href=\"https://zooshans.by\">"+arrOfNamesForCard[4]+"</a>" + "," + "<br/>" + "<p>"+arrOfNamesForCard[6]+ "," +arrOfDescripForCard[6]+ "</p>";
+            break;
+
+            case '6':
+            infoMobText.innerHTML = "<p>"+arrOfNamesForCard[5]+ ", " +arrOfDescripForCard[5]+ "</p>" + "<br/>" + "<a href=\"https://www.instagram.com/vetzoocentr/\">"+arrOfNamesForCard[7]+"</a>" + "," + "<br/>" + "<p>"+arrOfNamesForCard[9]+ ", " +arrOfDescripForCard[9]+ "</p>";
+            break;
+
+
+        }
+
+        infoMob.appendChild(infoMobText);
+        document.getElementById('contacts__allAboutMap').appendChild(infoMob);
+    
+    }
 
 
     
