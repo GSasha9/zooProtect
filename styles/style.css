@@ -162,8 +162,8 @@ li>a{
     border: none;
     border-radius: 7px;
     color: #FFF;
-    width: 48%;
-    height: 49px;
+    width: 16vw;
+    height: 4vw;
     margin-top: 0%;
     font-size: 1.3vw;
     border: transparent 2px solid;
@@ -256,7 +256,7 @@ li>a{
     font-size: 2.1vw;
     font-weight: 300;
     width: 48%;
-    height: 118px;
+    height: 10vw;
     padding-top: 0.1vw;
 }
 
@@ -284,8 +284,7 @@ video{
 
 #about_us{
     position: relative;
-    background-image: url(../img/balls.png);
-    max-width: 1346px;
+    background-image: url(../img/wool-basket.png);
     width: 100%;
     background-repeat: no-repeat;
     height: 870px;
@@ -293,6 +292,7 @@ video{
     background-position-x: -1px;
     z-index: -100;
     padding-top: 1vw;
+    padding-bottom: 12vw;
 }
 
 #about_us>div>h2{
@@ -503,7 +503,6 @@ video{
     font-weight: 400;
     margin-left: 75%;
     margin-bottom: 12vw;
-    margin-top: 96px;
 }
 
 #programs__cards{
@@ -585,7 +584,6 @@ video{
     margin-left:0vw;
     grid-column-gap: 2vw;
     align-items: center;
-    max-width: 1346px;
     width: 100%;
     overflow: hidden;
     padding-top: 20px;
