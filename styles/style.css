@@ -1,12 +1,12 @@
 body{
-    font-family: 'Bona Nova', serif;
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Bona Nova', 'Kanit', sans-serif;
     width: 100%;
 }
 
 .wrapper{
     margin: 0 auto;
     max-width: 2000px;
+    scroll-behavior: smooth;
 }
 
 .areaForLoader {
@@ -119,13 +119,14 @@ li>a{
     width: 9%;
     height: 50px;
     background-color: #E8EDED;
-    font-weight: 900;
+    font-weight: 400;
     border: none;
     margin-top: 3.7%;
     font-size: 1.3vw;
     border-radius: 7px;
     cursor: pointer;
     border: transparent 2px solid;
+    font-family: 'Kanit', sans-serif;
 }
 
 #header__menu>button:hover{
@@ -150,7 +151,6 @@ li>a{
     align-items: center;
 }
 
-
 #first_page__title>h1{
     font-family: 'Bona Nova', serif;
     font-size: 3.9vw;
@@ -162,7 +162,7 @@ li>a{
 
 #first_page__title>button{
     font-family: 'Kanit', sans-serif;
-    font-weight: 900;
+    font-weight: 400;
     background-color: #FF8F05;
     border: none;
     border-radius: 7px;
@@ -189,11 +189,9 @@ li>a{
     margin-left: 3%;
 }
 
-
 #first_page__mediaControllers_pause{
     visibility: visible;
     cursor: pointer;
-
 }
 
 #first_page__mediaControllers_pause:hover>rect{
@@ -263,6 +261,7 @@ li>a{
     width: 48%;
     height: 10vw;
     padding-top: 0.1vw;
+    font-family: 'Kanit', sans-serif;
 }
 
 #first_page__subitle>p:first-of-type{
@@ -317,6 +316,7 @@ video{
     margin-top: 0px;
     padding: 15px;
     text-align: center;
+    font-family: 'Kanit',sans-serif;
 }
 
 #about_us__subtitle>span{
@@ -390,6 +390,7 @@ video{
     border: transparent 2px solid;
     cursor: pointer;
     margin-left: 10vw;
+    font-family: 'Kanit', sans-serif;
 }
 
 #enter:hover{
@@ -543,6 +544,7 @@ video{
 
 .card_subtlt{
     visibility: hidden;
+    font-family: 'Kanit', sans-serif;
 }
 
 .programs__card:hover>img{
@@ -576,7 +578,6 @@ video{
     font-size: 3.5vw;
     font-weight: 400;
     margin-left: 3%;
-    margin-bottom: 12vw;
     margin-top: 162px;
 }
 
@@ -584,13 +585,11 @@ video{
     display: grid;
     grid-template-columns: 21vw 21vw 21vw 21vw 21vw;
     max-height: 30vw;
-    margin-top: 85px;
     margin-left:0vw;
     grid-column-gap: 2vw;
     align-items: center;
     width: 100%;
     overflow: hidden;
-    padding-top: 20px;
 }
 
 .allNews__news_oneNews{
@@ -624,8 +623,6 @@ video{
     }
 }
 
-
-
 .grid_item:hover>.news_title{
     color:#ff6905;
 }
@@ -640,7 +637,7 @@ video{
     position: relative;
     display: flex;
     margin-top: 34vw;
-    margin-bottom: -290px;
+    margin-bottom: -260px;
     margin-left: 87%;
 }
 
@@ -649,6 +646,7 @@ video{
     top: -30.4vw;
     width: 4vw;
     cursor: pointer;
+    height: 3vw;
 }
 
 #arrow_left:hover>path{
@@ -665,6 +663,7 @@ video{
     margin-left: 4.5vw;
     width: 4vw;
     cursor: pointer;
+    height: 3vw;
 }
 
 #arrow_right:hover>path{
@@ -683,8 +682,6 @@ video{
     height: 78vw;
 }
 
-
-
 #contacts>div>h2{
     font-family: 'Bona Nova', serif;
     font-size: 3.5vw;
@@ -698,6 +695,7 @@ video{
     margin-top: -10.5vw;
     margin-left: 3vw;
     font-size: 1.5vw;
+    font-family: 'Kanit', sans-serif;
 }
 
 #contacts__map{
@@ -714,7 +712,6 @@ video{
     filter: none;
     transition: 3s ease;
 }
-
 
 #minsk{
     position: absolute;
@@ -803,34 +800,39 @@ video{
     top: 11vw;
     left: 32vw;
 }
+
 #point4{
     position: absolute;
     top: 19vw;
     left: 26vw;
     z-index: 99;
 }
+
 #point5{
     position: absolute;
     top: 19vw;
     left: 36vw;
-
 }
+
 #point6{
     position: absolute;
     top: 22vw;
     left: 21vw;
     z-index: 99;
 }
+
 #point7{
     position: absolute;
     top: 20vw;
     left: 41vw;
 }
+
 #point8{
     position: absolute;
     top: 24vw;
     left: 12vw; 
 }
+
 #point9{
     position: absolute;
     top: 24vw;
@@ -866,8 +868,8 @@ video{
     border-radius: 7px;
     box-shadow: -4px 6px 5px 2px rgba(141, 141, 141, .2);
     opacity: 0;
+    font-family: 'Kanit', sans-serif;
 }
-
 
 #contacts__card_info>div:first-of-type{
     margin-top: 3vw;
@@ -876,6 +878,7 @@ video{
 
 #contacts__card_info>div>img{
     width: 9vw;
+    border-radius: 5px;
 }
 
 #contacts__card_info>div:last-of-type{
@@ -903,6 +906,7 @@ footer{
 #footer__menu_social{
     display: flex;
     flex-direction: column;
+    margin-left: 3vw;
 }
 
 #footer__menu>ul{
@@ -912,6 +916,8 @@ footer{
     gap: 6vw;
     margin-top: 8vw;
     font-size: 1.4vw;
+    font-family: 'Kanit', sans-serif;
+    padding-inline-start: 0px;
 }
 
 #footer__menu>ul>li{
@@ -930,6 +936,7 @@ footer{
 #footer__subscribe{
     margin-top: 6vw;
     margin-left: 12%;
+    font-family: 'Kanit', sans-serif;
 
 }
 
@@ -941,11 +948,15 @@ footer{
 #footer__subscribe>input{
     height: 3.3vw;
     width: 21.2vw;
-    margin-left: -0.8vw;
+    margin-left: 0vw;
     margin-top: 0.3vw;
     border-radius: 7px;
     border: none;
     margin-bottom: 2vw;
+    padding-left: 0.6vw;
+    font-size: 1.5vw;
+    font-weight: 400;
+    outline: none;
 }
 
 #footer__subscribe>input::placeholder{
@@ -960,7 +971,7 @@ footer{
 
 #footer__subscribe>button{
     margin-left: 0.8vw;
-    height: 3.9vw;
+    height: 3.3vw;
     width: 9vw;
     background-color: #FF8F05;
     color: #f0f0ef;
@@ -968,6 +979,8 @@ footer{
     border: transparent 2px solid;
     border-radius: 7px;
     cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
 }
 
 #footer__subscribe>button:hover {
@@ -984,7 +997,6 @@ footer{
     display: flex;
     flex-wrap: wrap;
     width: 8vw;
-    margin-left: 3vw;
     margin-top: 1vw;
     margin-bottom: 4vw;
 }
@@ -1035,6 +1047,15 @@ footer{
 #facebook:active>path{
     fill:#B3BCA7;
 }
+
+#infoMob{
+    display: none;
+}
+
+
+
+
+
 
 
 
@@ -1095,6 +1116,10 @@ footer{
         font-weight: 300;
     }
 
+    #first_page{
+        margin-bottom: 5vw;
+    }
+
     #first_page__title {
         margin-top: 102px;
         margin-left: 14%;
@@ -1127,10 +1152,12 @@ footer{
         background-image: linear-gradient(90deg, #f0f0ef, #CACEBC, #f0f0ef,#d9e4b1b0);
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;
+        padding-bottom: 1vw;
     }
 
     #about_us>div>h2 {
         margin-left: 2%;
+        margin-top: 0%;
     }
 
     #about_us__subtitle {
@@ -1139,6 +1166,7 @@ footer{
         margin-left: 35%;
         margin-top: -66px;
         padding: 20px;
+        line-height: 2.6vw;
     }
 
     #about_us__balls {
@@ -1152,7 +1180,7 @@ footer{
         width: 20.5vw;
         height: 19.5vw;
         padding-top: 9px;
-        font-size: 1.7vw;
+        font-size: 1.6vw;
         animation: borderBall1 7.22s infinite;
     }
 
@@ -1172,6 +1200,9 @@ footer{
         margin-top: 0px;
     }
 
+    #about_us__balls>p:nth-child(2)>span {
+        padding-top: 0vw; 
+    }
 
     #about_us__balls>p:first-of-type>span:last-of-type {
         font-size: 1.5vw;
@@ -1182,27 +1213,13 @@ footer{
         display: none;
     }
 
-    #enter_tabl{
-        display: initial;
-        width: 10vw;
-        height: 4vw;
-        margin-left: 0vw;
-        font-weight: 200;
-        padding: 0.5vw;
-        font-size: 1.4vw;
-        margin-top: 1vw;
-        background-color: #B3BCA7;
-        border: none;
-        border-radius: 3px;
-    }
-
     #about_us__balls>p:nth-child(2) {
         top: 17vw;
         left: 39%;
         height: 14.5vw;
         padding-top: 5vw;
         width: 20.5vw;
-        font-size: 1.65vw;
+        font-size: 1.6vw;
         animation: borderBall2 7.22s infinite;
     }
 
@@ -1257,18 +1274,23 @@ footer{
         z-index: 1;
     }
 
+    #programs{
+        height: 70vw;
+        margin-bottom: -168px;
+    }
+
     #programs>h2 {
         font-size: 3.4vw;
         margin-left: 72vw;
         margin-bottom: 14vw;
-        margin-top: -4vw;
+        margin-top: 6vw;
     }
 
     #programs__cards {
         grid-template-columns: 27.9vw 27.9vw 27.9vw;
         margin-left: 4vw;
         gap: 3vw;
-        margin-bottom: 100px;
+        padding-bottom: 0px;
     }
 
     .programs__card{
@@ -1289,7 +1311,7 @@ footer{
     }
 
     #allNews {
-        padding-top: 4vw;
+        padding-top: 0px;
     }
 
     #allNews>div>h2 {
@@ -1300,7 +1322,7 @@ footer{
 
     #allNews__arrows {
         margin-top: 38vw;
-        margin-bottom: -29.6vw;
+        margin-bottom: -24.6vw;
         margin-left: 84.4vw;
     }
 
@@ -1402,7 +1424,15 @@ footer{
         height: 3vw;
     }
 
+    #infoMob{
+        display: none;
+    }
+
 }
+
+
+
+
 
 
 
@@ -1526,6 +1556,7 @@ footer{
         cursor: pointer;
         padding: 0px;
         color: rgb(40, 40, 40);
+        font-family: 'Kanit', sans-serif;
     }
 
     #burger_menu_head>button:hover{
@@ -1548,6 +1579,10 @@ footer{
         position: relative;
     }
 
+    #burger_menu>ul>li:hover>a{
+        color: #FF8F05;
+    }
+
     #burger_menu>ul>li>svg{
         position: absolute;
         left: 156px;
@@ -1557,6 +1592,7 @@ footer{
     #first_page{
         width: 360px;
         height: 476px;
+        margin-bottom: -9px;
     }
 
     #first_page__title>h1{
@@ -1609,10 +1645,10 @@ footer{
     }
 
     #programs{
-        margin-top: -325px;
+        margin-top: -260px;
         width: 360px;
         animation: none;
-        margin-bottom: -117px;
+        height: 1527px;
     }
 
     #programs>h2{
@@ -1667,6 +1703,7 @@ footer{
         width: 360px;
         animation: none;
         height: 406px;
+        padding-top: 1px;
     }
 
     #allNews>div>h2 {
@@ -1680,7 +1717,7 @@ footer{
     #allNews__news_slider {
         display: grid;
         grid-template-columns: 189px;
-        margin-top: 14vw;
+        margin-top: 45px;
         overflow: hidden;
         max-height: 178px;
         margin-left: 84px;
@@ -1710,25 +1747,28 @@ footer{
     #allNews__arrows {
         margin-left: 25.4px;
         margin-top: 140px;
+        margin-bottom: -83px;
     }
 
     #arrow_left {
         position: absolute;
-        top: 12px;
+        top: 30px;
         width: 39px;
         cursor: pointer;
+        height: 39px;
     }
 
     #arrow_right {
         position: absolute;
-        top: 12px;
+        top: 30px;
         margin-left: 270px;
         width: 39px;
         cursor: pointer;
+        height: 39px;
     }
 
     #contacts {
-        padding-top: 50px;
+        padding-top: 1px;
         width: 360px;
         animation: none;
         height: 462px;
@@ -1738,12 +1778,13 @@ footer{
     #contacts>div>h2 {
         font-size: 24px;
         text-align: center;
-        margin-bottom: 55px;
+        margin-bottom: 12px;
     }
 
     #contacts>div>p {
         text-align: center;
         font-size: 16px;
+        margin-top: 0px;
     }
 
     #contacts__map {
@@ -1873,6 +1914,7 @@ footer{
     }
 
     #infoMob{
+        display: initial;
         position: absolute;
         left: 0px;
         top: 234px;
@@ -1930,6 +1972,7 @@ footer{
     #footer__menu_social {
         width: 49%;
         position: relative;
+        margin-left: 0px;
     }
 
     #footer__subscribe {
