@@ -155,17 +155,15 @@ body{
     
 }
 
-#headRegistrationForm>p{
+#headRegistrationForm>p:first-of-type{
     cursor: pointer;
     border-bottom: 2px solid transparent;
-}
-
-#headRegistrationForm>p:first-of-type{
-    border-bottom: 2px solid #FF8F05;
-}
-
-#headRegistrationForm>p:last-of-type{
     color: rgb(122, 122, 122);
+}
+
+#headRegistrationForm>p:nth-of-type(2){
+    border-bottom: 2px solid #FF8F05;
+    color: rgb(26, 26, 26);
 }
 
 #headRegistrationForm>p:last-of-type:hover{
@@ -219,7 +217,7 @@ body{
     width: 1vw;
     height: 1vw;
     background-color: #B3BCA7;
-    border-radius: 3px;
+    border-radius: 50%;
     cursor: pointer;
     border: 1px transparent solid;
 }

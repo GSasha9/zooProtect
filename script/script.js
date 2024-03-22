@@ -1,3 +1,4 @@
+
 //предзагрузчик, запускаем видео, аудио при загрузке страницы
 const video = document.querySelector("video");
 const audio = [...document.querySelectorAll("audio")];
@@ -92,6 +93,9 @@ function openForm(){
     let win = window.open("./registrationForm.html", "_blank");
 };
 
+
+
+
 //функция для повяления информационной карточки по клику на точке на карте
 //появление метки геотега и информационной карточки при клике
 let points = document.querySelectorAll('.geoteg');
@@ -102,6 +106,13 @@ allPoints.forEach(function(el){
         showInfoCard(el); 
     });
 });
+
+map.addEventListener('mouseover', function(){
+    let contactsInfoCard = document.querySelector('#contacts__card');
+    contactsInfoCard.style.opacity = '1';
+    let solidLine = document.querySelector('#solid_line');
+    solidLine.style.opacity = '1';
+})
 
 //массивы с информацией для информационных карточек
 const arrOfPicForCard = ['0','./img/volontee/1vitebskDobrik.png','./img/volontee/2vitebskIrina.png','./img/volontee/3vitebskVetCentr.png','./img/volontee/4minskzooch.png','./img/volontee/5mogilevman.png','./img/volontee/6minskKsenya.png','./img/volontee/7mogilevcentr.png','./img/volontee/8grodnoSeredce.png','./img/volontee/9mogilevOlga.png','./img/volontee/10bresrDobr.png','./img/volontee/11gomel.png'];
@@ -121,7 +132,7 @@ function showInfoCard(el){
     geoTeg.setAttribute('src', './img/geotegI.png'); // задаем атрибут src
     geoTeg.setAttribute('width', '100%'); // задаем атрибут width
     geoTeg.id= 'geoteg1';
-    geoTeg.style.transform = "translateX(-1vw) translateY(-2.5vw)"; // задаем атрибут width
+    geoTeg.style.transform = "translateX(-1vw) translateY(-3vw)"; 
     diVector.appendChild(geoTeg);
     
 //появление информационной карты
@@ -339,6 +350,22 @@ burgerMenuRef.forEach((elem)=> elem.addEventListener('click',closeBurgerMenu));
 //закрытие бургер-меню при скорлле страницы, клике вне страницы
 window.addEventListener('scroll', closeBurgerMenu);
 
+//валидация поля подписки на рассылку
+let subscribeInput = document.querySelector('#footer__subscribe>input');
+subscribeInput.addEventListener('blur', isItMail);
+function isItMail(){
+    if (subscribeInput.value == '') return;
+    else{
+    if(!/\w*\d*@{1}\w*\.{1}\w*/gi.test(subscribeInput.value)) {
+        subscribeInput.value = "Адрес введен неверно";
+    };}
+};
+
+subscribeInput.addEventListener('focus', function(){
+    if (subscribeInput.value == "Адрес введен неверно"){
+        subscribeInput.value = "";
+    }
+});
 
 
 
