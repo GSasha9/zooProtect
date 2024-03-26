@@ -12,7 +12,7 @@ document.body.onload = function(){
             audio.forEach((elem)=> elem.play());
             soundOffIfTabletMob();
         }
-    }, 5000);
+    }, 1000);
 };
 
 
