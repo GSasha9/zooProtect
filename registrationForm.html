@@ -9,28 +9,28 @@
 </head>
 <body>
    
-    <form id="enterForm">
-        <div id="headForm">
-            <p>Вход</p>
-            <p class="notActive">Регистрация</p>
+    <div id="enterForm">
+
+        <div id="forms_head">
+                <p id="form_enter">Вход</p>
+                <p id="form_registration" class="notActive">Регистрация</p>
         </div>
-        <div id="formBody">
+
+
+        <form id="formBody">
             <label for="login">Логин</label>
             <input type="text" name="login" id="login">
             <label for="password">Пароль</label>
             <input type="password" name="password" id="password">
             <button id="enterForm__enter">ВОЙТИ</button>
             <p>Забыли пароль?</p>
-        </div>
-    </form>
+        </form>
+   
 
 
-    <form id="registrationForm">
-        <div id="headRegistrationForm">
-            <p class="notActive">Вход</p>
-            <p>Регистрация</p>
-        </div>
-        <div id="formBodyRegistrationForm">
+
+        
+        <form id="formBodyRegistrationForm">
             <label for="name">Имя</label>
             <input type="text" name="name" id="name">
             <label for="email">E-mail</label>
@@ -56,9 +56,9 @@
                 
             </div>
             <button id="formBodyRegistrationForm__enter">Зарегестрироваться</button>
-        </div>
+        </form>
         
-    </form>
+    </div>
 
     <script src="./script/scriptForReg.js"></script>
 

@@ -8,7 +8,7 @@ body{
     animation: gradient 15s ease infinite;
     padding-top: 40px;
     height: 100%;
-    max-height: 786px;
+    max-height: 47vw;
 }
 
 @keyframes gradient {
@@ -23,18 +23,18 @@ body{
 }
 }
 
-
 #enterForm{
     width: 40vw;
-    height: 48vw;
+    height: 47vw;
     border-radius: 7px;
     background-color: #E8EDED;
     margin: auto;
     box-shadow: 7px 7px 6px 2px rgba(141, 141, 141, .2);
     visibility: visible;
+    position: relative;
 }
 
-#headForm{
+#forms_head{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -44,21 +44,14 @@ body{
     padding-top: 1vw;
 }
 
-#headForm>p{
-    cursor: pointer;
-    border-bottom: 2px solid transparent;
-}
-
-#headForm>p:first-of-type{
+#forms_head>p{
     border-bottom: 2px solid #FF8F05;
+    cursor: pointer;
 }
 
-#headForm>p:last-of-type{
-    color: rgb(122, 122, 122);
-}
-
-#headForm>p:last-of-type:hover{
-    border-bottom: 2px solid #818772;
+.notActive{
+    color: darkgrey !important;
+    border-bottom: 2px solid transparent !important;
 }
 
 #formBody{
@@ -128,51 +121,14 @@ body{
     color: #FF8F05;
 }
 
-#registrationForm{
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    width: 34vw;
-    height: fit-content;
-    border-radius: 7px;
-    background-color: #E8EDED;
-    box-shadow: 7px 7px 6px 2px rgba(141, 141, 141, .2);
-    visibility: hidden;
-    margin-bottom: 100px;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-}
-
-#headRegistrationForm{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    column-gap: 8vw;
-    font-size: 2.0vw;
-    font-family: 'Bona Nova', serif;
-    padding-top: 2vw;
-    
-}
-
-#headRegistrationForm>p:first-of-type{
-    cursor: pointer;
-    border-bottom: 2px solid transparent;
-    color: rgb(122, 122, 122);
-}
-
-#headRegistrationForm>p:nth-of-type(2){
-    border-bottom: 2px solid #FF8F05;
-    color: rgb(26, 26, 26);
-}
-
-#headRegistrationForm>p:last-of-type:hover{
-    border-bottom: 2px solid #818772;
-}
-
 #formBodyRegistrationForm{
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 12vw;
+    left: 0.5vw;
+    visibility: hidden;
+    width: 40vw;
 }
 
 #formBodyRegistrationForm>label{
@@ -186,7 +142,7 @@ body{
     font-family: sans-serif;
     margin-left: 5.8vw;
     margin-top: 0.6vw;
-    width: 22.7vw;
+    width: 27.7vw;
     border: none;
     background-color: #E8EDED;
     border-bottom: 1px gray solid;
@@ -207,8 +163,7 @@ body{
     margin-top: 3vw;
     justify-content: center;
     position: relative;
-    gap: 7vw;
-    margin-left: -1vw;
+    gap: 10vw;
     margin-bottom: 1vw;
 }
 
@@ -248,7 +203,7 @@ body{
     font-size: 1.3vw;
     border: none;
     border-radius: 7px;
-    margin-left: 5.5vw;
+    margin-left: 8vw;
     font-weight: 500;
     cursor: pointer;
     margin-bottom: 2vw;
@@ -275,110 +230,99 @@ body{
 }
 
 
+@media  all and  (max-width: 900px){
 
+    #enterForm{
+        width: 60vw;
+        height: 70.5vw;
+    }
 
+    #forms_head{
+        column-gap: 13.5vw;
+        font-size: 3.75vw;
+        padding-top: 1.5vw;
+    }
+    
+    #formBody>label{
+        font-size: 2.1vw;
+        margin-left: 9vw;
+        margin-top: 6vw;
+    }
+    
+    #formBody>input{
+        margin-left: 9vw;
+        margin-top: 3vw;
+        width: 40.5vw;
+        font-size: 2.25vw;
+    }
+    
+    #enterForm__enter{
+        margin-top: 9.45vw;
+        width: 39.75vw;
+        height: 6vw;
+        font-size: 2.4vw;
+        margin-left: 9.75vw;
+    }
+    
+    #enterForm__enter:hover{
+        border: #FF8F05 2px solid;
+    }
+    
+    #enterForm__enter+p{
+        font-size: 1.8vw;
+        margin-top: 2.55vw;
+    }
+    
+    #formBodyRegistrationForm{
+        top: 18vw;
+        left: 0.75vw;
+        width: 60vw;
+    }
+    
+    #formBodyRegistrationForm>label{
+        font-size: 1.8vw;
+        margin-left: 8.7vw;
+        margin-top: 2.25vw;
+    }
+    
+    #formBodyRegistrationForm>input{
+        margin-left: 8.7vw;
+        margin-top: 0.9vw;
+        width: 41.55vw;
+        font-size: 2.25vw;
+        margin-bottom: 0.75vw;
+    }
+    
+    #radio{
+        font-size: 1.8vw;
+        margin-top: 4.5vw;
+        gap: 15vw;
+        margin-bottom: 1.5vw;
+    }
+    
+    #radio>label>span{
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+    
+    #formBodyRegistrationForm__enter{
+        margin-top: 5.25vw;
+        width: 34.95vw;
+        height: 5.4vw;
+        font-size: 1.95vw;
+        margin-left: 12vw;
+        margin-bottom: 3vw;
+    }
+    
+    .alert{
+        font-size: 1.8vw;
+    
+    }
 
-
-
-
-
-@media  all and  (max-width: 625px){
-
-#enterForm{
-    width: 80vw;
-    height: 92vw;
- 
-}
-
-#headForm{
-    column-gap: 18vw;
-    font-size: 5vw;
-    padding-top: 2vw;
-}
-
-#formBody>label{
-    font-size: 2.8vw;
-    margin-left: 12vw;
-    margin-top: 8vw;
-}
-
-#formBody>input{
-    margin-left: 12vw;
-    margin-top: 4vw;
-    width: 54vw;
-    font-size: 3vw;
-    font-weight: 300;
-}
-
-#enterForm__enter{
-    margin-top: 12.6vw;
-    width: 53vw;
-    height: 8vw;
-    font-size: 3.2vw;
-    margin-left: 13vw;
-}
-
-#enterForm__enter+p{
-    font-size: 2.4vw;
-    margin-top: 3.4vw;
-}
-
-#registrationForm{
-    width: 68vw;
-    height: fit-content;
-    padding-top: 4vw;
-    padding-bottom: 4vw;
-}
-
-#headRegistrationForm{
-    column-gap: 16vw;
-    font-size: 4.0vw;
-    padding-top: 4vw;
-}
-
-#formBodyRegistrationForm>label{
-    font-size: 2.4vw;
-    margin-left: 11.5vw;
-    margin-top: 3vw;
-}
-
-#formBodyRegistrationForm>input{
-    margin-left: 11.6vw;
-    margin-top: 1.2vw;
-    width: 46.8vw;
-    font-size: 3vw;
-    margin-bottom: 1vw;
-}
-
-#radio{
-    font-size: 2.4vw;
-    margin-top: 6vw;
-    gap: 14vw;
-    margin-left: -2vw;
-}
-
-#radio>label>span{
-    width: 2vw;
-    height: 2vw;
-}
-
-#formBodyRegistrationForm__enter{
-    margin-top: 7vw;
-    width: 46.6vw;
-    height: 7.2vw;
-    font-size: 2.6vw;
-    margin-left: 11vw;
-    margin-bottom: 4vw;
-}
-
-.alert{
-    display: block;
-    color: #FF8F05;
-    background-color: transparent;
-    font-family: 'Kanit', sans-serif;
-    text-align: center;
-    font-size: 2.4vw;
 
 }
 
-}
+
+
+
+

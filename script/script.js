@@ -132,7 +132,6 @@ function showInfoCard(el){
     geoTeg.setAttribute('src', './img/geotegI.png'); // задаем атрибут src
     geoTeg.setAttribute('width', '100%'); // задаем атрибут width
     geoTeg.id= 'geoteg1';
-    geoTeg.style.transform = "translateX(-1vw) translateY(-3vw)"; 
     diVector.appendChild(geoTeg);
     
 //появление информационной карты

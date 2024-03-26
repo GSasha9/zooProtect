@@ -1,21 +1,51 @@
 //переход на вкладку "регистрация"
+window.addEventListener('resize', saveRegForm);
 
-const registrationBlank = document.querySelectorAll(".notActive");
-let arrOfref = [...registrationBlank];
-
-arrOfref.forEach(function(elem){elem.addEventListener('click', function(){
-    if(document.querySelector('#enterForm').style.visibility != "hidden"){
-    document.querySelector('#enterForm').style.visibility = "hidden";
-    document.querySelector('#registrationForm').style.visibility = "visible";}
-    else {
-        document.querySelector('#registrationForm').style.visibility = "hidden";
-        document.querySelector('#enterForm').style.visibility = "visible";
+function saveRegForm(){
+    if(window.innerWidth <= '900' && document.querySelector('#form_registration').className != 'notActive'){
+        document.querySelector('#enterForm').style.height = "94.5vw";
     }
-})})
+    else {document.querySelector('#enterForm').style.height = "63vw"};
+}
+
+
+const form_enter = document.querySelector("#form_enter");
+const form_registration = document.querySelector("#form_registration");
+form_enter.addEventListener('click', openEnter);
+form_registration.addEventListener('click', openReg);
+
+function openEnter(){
+    form_enter.classList.remove("notActive");
+    document.querySelector('#formBodyRegistrationForm').style.visibility = "hidden";
+    document.querySelector('#formBody').style.visibility = "visible";
+    form_registration.classList.add("notActive");
+    document.querySelector('#enterForm').style.height = "47vw";
+}
+
+function openReg(){
+    form_registration.classList.remove("notActive");
+    document.querySelector('#formBody').style.visibility = "hidden";
+    document.querySelector('#formBodyRegistrationForm').style.visibility = "visible";
+    form_enter.classList.add("notActive");
+    if(window.innerWidth <= '900'){
+        document.querySelector('#enterForm').style.height = "94.5vw";
+    }
+    else {document.querySelector('#enterForm').style.height = "63vw"};
+}
+
+
+
+
+
+
+
+
+
+
 
 //проверка заполнения формы входа
 window.addEventListener("DOMContentLoaded", function(){
-    document.querySelector("#enterForm").addEventListener("submit", validateEnterForm);
+    document.querySelector("#formBody").addEventListener("submit", validateEnterForm);
 });
 
 function validateEnterForm(e){
@@ -44,7 +74,7 @@ function isEmpty(field){
 //проверка заполнения формы регистрации
 
 window.addEventListener("DOMContentLoaded", function(){
-    document.querySelector("#registrationForm").addEventListener("submit", validateRegForm);
+    document.querySelector("#formBodyRegistrationForm").addEventListener("submit", validateRegForm);
 });
 
 function validateRegForm(e){

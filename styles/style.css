@@ -1,12 +1,13 @@
 body{
     font-family: 'Bona Nova', 'Kanit', sans-serif;
     width: 100%;
+
 }
 
 .wrapper{
     margin: 0 auto;
-    max-width: 2000px;
     scroll-behavior: smooth;
+    max-width: 2000px;
 }
 
 .areaForLoader {
@@ -192,6 +193,8 @@ li>a{
 #first_page__mediaControllers_pause{
     visibility: visible;
     cursor: pointer;
+    width: 16px;
+    height: 28px; 
 }
 
 #first_page__mediaControllers_pause:hover>rect{
@@ -208,6 +211,8 @@ li>a{
     left: 0%;
     visibility: hidden;
     cursor: pointer;
+    width: 24px;
+    height: 29px;
 }
 
 #first_page__mediaControllers_play:hover>path{
@@ -224,6 +229,8 @@ li>a{
     left: 3%;
     cursor: pointer;
     visibility: visible;
+    width: 35px;
+    height: 25px;
 }
 
 #first_page__mediaControllers_soundOn:hover>path{
@@ -240,6 +247,8 @@ li>a{
     left: 3%;
     visibility: hidden;
     cursor: pointer;
+    width: 31px;
+    height: 27px; 
 }
 
 #first_page__mediaControllers_soundOff:hover>path{
@@ -290,11 +299,10 @@ video{
     background-image: url(../img/wool-basket.png);
     width: 100%;
     background-repeat: no-repeat;
-    height: 69vw;
     max-height: 69vw;
     z-index: -100;
     padding-top: 1vw;
-    background-size: 126%;
+    background-size: cover;
 }
 
 #about_us>div>h2{
@@ -325,6 +333,8 @@ video{
 
 #about_us__balls{
     position: relative;
+    height: 35vw;
+    max-width: 2000px;
 }
 
 #about_us__balls>p{
@@ -791,6 +801,7 @@ video{
 
 #geoteg1{
     opacity: 1 !important;
+    transform: translateX(-1vw) translateY(-3vw);
   
 }
 
@@ -2113,11 +2124,539 @@ footer{
     #enter{
         top: 28vw;
     }
-
-    #about_us{
-        height: 67vw;
-    }
 }
+
+@media  all and  (min-width: 2000px){
+    #enter {
+        top: 834px;
+        left: -54px;
+        position: absolute;
+        margin-top: 1111px;
+        width: 9%;
+        height: 11%;
+        border-radius: 2px;
+        background-color: #CACEBC;
+        font-weight: 400;
+        border: transparent 2px solid;
+        cursor: pointer;
+        margin-left: 198px;
+        font-family: 'Kanit', sans-serif;
+        font-size: 27px;
+    }
+
+    #header__menu {
+        width: 99%;
+        margin-top: -5px;
+    }
+
+    #header__menu>a {
+        width: 319px;
+    }
+
+    #header__menu>ul {
+        margin-left: 314px;
+        column-gap: 4%;
+        margin-top: 103px;
+        margin-right: 209px;
+        width: 900px;
+        font-size: 30px;
+    }
+
+    #header__menu>button {
+        width: 176px;
+        height: 70px;
+        font-weight: 400;
+        margin-top: 68px;
+        font-size: 25px;
+    }
+
+    #first_page__title {
+        margin-top: 130px;
+        margin-left: 215px;
+        width: 576px;
+    }
+
+    #first_page__title>h1 {
+        font-size: 77px;
+        border-radius: 25px;
+        padding: 32px;
+    }
+
+    #first_page__title>button {
+        width: 291px;
+        height: 72px;
+        margin-top: -24px;
+        font-size: 23px;
+    }
+
+    #first_page__subitle {
+        top: 400px;
+        left: 972px;
+        border-radius: 7px;
+        font-size: 41px;
+        width: 965px;
+        height: 200px;
+        padding-top: 10px;
+    }
+
+    #first_page__mediaControllers {
+        margin-top: 276px;
+        margin-left: 34px;
+    }
+
+    #first_page__mediaControllers_play{
+        visibility: hidden;
+        cursor: pointer;
+        width: 34px;
+        height: 39px;
+    }
+
+    #first_page__mediaControllers_pause{
+        visibility: visible;
+        cursor: pointer;
+        width: 26px;
+        height: 38px; 
+    }
+
+    #first_page__mediaControllers_soundOn{
+        position: absolute;
+        top: 1px;
+        left: 3%;
+        cursor: pointer;
+        visibility: visible;
+        width: 45px;
+        height: 35px;
+    }
+
+    #first_page__mediaControllers_soundOff{
+        position: absolute;
+        top: 1px;
+        left: 3%;
+        visibility: hidden;
+        cursor: pointer;
+        width: 41px;
+        height: 37px; 
+    }
+    
+    #about_us {
+        max-height: initial;
+        padding-top: 47px;
+    }
+
+    #about_us>div>h2 {
+        font-family: 'Bona Nova', serif;
+        font-size: 65px;
+        font-weight: 400;
+        margin-left: 58px;
+        padding-top: 148px;
+    }
+
+    #about_us__subtitle {
+        font-size: 32px;
+        width: 837px;
+        line-height: 43px;
+        margin-left: 540px;
+        margin-top: -89px;
+        padding: 15px;
+    }
+
+    #about_us__balls {
+        position: relative;
+        height: 1112px;
+        max-width: 2000px;
+    }
+
+    #about_us__balls>p:first-of-type {
+        top: 483px;
+        left: 50px;
+        width: 365px;
+        height: 342px;
+        padding-top: 16px;
+        animation: borderBall1 7.50s infinite;
+    }
+
+    #about_us__balls>p:first-of-type>span:last-of-type {
+        font-size: 25px;
+    }
+
+    #about_us__balls>p {
+        font-size: 31px;
+    }
+
+    #about_us__balls>p:nth-child(2) {
+        top: 500px;
+        left: 1472px;
+        height: 350px;
+        width: 365px;
+        font-size: 31px;
+        line-height: 45px;
+        animation: borderBall2 7.5s infinite;
+    }
+
+    #about_us__balls>p:nth-child(2)>span {
+        width: 242px;
+        padding-top: 126px;
+    }
+
+    #about_us__balls>p:last-of-type {
+        top: -101px;
+        left: 1575px;
+        height: 251px;
+        padding-top: 106px;
+        text-align: center;
+        width: 365px;
+        font-size: 31px;
+        line-height: 45px;
+        border: 3px transparent solid;
+        animation: borderBall3 7.5s infinite;
+    }
+
+    #line_one {
+        top: 182px;
+        left: 354px;
+        max-width: 2000px;
+        width: 1630px;
+        z-index: 1;
+    }
+
+    #programs>h2 {
+        font-size: 65px;
+        margin-left: 74px;
+        margin-bottom: 292px;
+        margin-top: 178px;
+    }
+
+    #programs__cards {
+        display: grid;
+        grid-template-columns: 529px 529px 529px;
+        grid-template-rows: 626px;
+        margin-left: 99px;
+        gap: 117px;
+        margin-bottom: 100px;
+    }
+
+    .programs__card>img {
+        width: 464px;
+        margin-top: 33px;
+        height: 431px;
+        margin-bottom: -16px;
+        border-radius: 7px;
+    }
+
+    .programs__card>h4 {
+        font-family: 'Bona Nova', serif;
+        font-size: 39px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    #allNews>div>h2 {
+        font-size: 68px;
+        margin-left: 59px;
+        margin-top: 186px;
+    }
+
+    #allNews__arrows {
+        position: relative;
+        display: flex;
+        margin-top: 695px;
+        margin-bottom: 0px;
+        margin-left: 1722px;
+    }
+
+    #arrow_left {
+        position: absolute;
+        top: -748px;
+        width: 59px;
+        cursor: pointer;
+        height: 61px;
+    }
+
+    #arrow_right {
+        position: absolute;
+        top: -748px;
+        margin-left: 85px;
+        width: 59px;
+        cursor: pointer;
+        height: 61px;
+    }
+
+    #allNews__news_slider {
+        grid-template-columns: 400px 400px 400px 400px 400px;
+        max-height: 400px;
+        margin-left: 0vw;
+        grid-column-gap: 40px;
+        width: 100%;
+        margin-top: -400px;
+    }
+
+    .news_title {
+        font-size: 30px;
+        margin-top: -74px;
+        height: 49px;
+        width: 100%;
+        padding-top: 21px;
+    }
+
+    #contacts {
+        background-image: linear-gradient(90deg, #f0f0ef, #CACEBC, #f0f0ef, #d9e4b1b0);
+        padding-top: 63px;
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 1428px;
+    }
+
+    #contacts>div>p {
+        margin-top: -203px;
+        margin-left: 62px;
+        font-size: 30px;
+        font-family: 'Kanit', sans-serif;
+    }
+
+    #contacts>div>h2 {
+        font-size: 68px;
+        margin-left: 55px;
+        margin-bottom: 234px;
+        margin-top: 169px;
+    }
+
+    #contacts__map {
+        position: relative;
+        width: 30%;
+        filter: grayscale();
+        transform: translateX(459px);
+        transition: filter 3s ease;
+        transition: transform 3s ease;
+    }
+
+    #contacts__points {
+        top: 134px;
+        left: 0vw;
+    }
+
+    #point1 {
+        position: absolute;
+        top: 91px;
+        left: 522px;
+    }
+
+
+    #point2 {
+        position: absolute;
+        top: 198px;
+        left: 403px;
+    }
+
+    #point3 {
+        position: absolute;
+        top: 245px;
+        left: 606px;
+    }
+
+    #point4 {
+        position: absolute;
+        top: 382px;
+        left: 487px;
+        z-index: 99;
+    }
+
+
+    #point5 {
+        position: absolute;
+        top: 384px;
+        left: 693px;
+    }
+
+    #point6 {
+        position: absolute;
+        top: 448px;
+        left: 402px;
+        z-index: 99;
+    }
+
+    #point7 {
+        position: absolute;
+        top: 402px;
+        left: 793px;
+    }
+
+    #point8 {
+        position: absolute;
+        top: 491px;
+        left: 228px;
+    }
+
+    #point9 {
+        position: absolute;
+        top: 477px;
+        left: 640px;
+    }
+
+    #point10 {
+        position: absolute;
+        top: 602px;
+        left: 281px;
+    }
+
+    #point11 {
+        position: absolute;
+        top: 549px;
+        left: 760px;
+    }
+
+    #minsk {
+        position: absolute;
+        margin-top: 352px;
+        margin-left: 355px;
+        z-index: 10;
+        width: 320px;
+    }
+
+    #brest {
+        position: absolute;
+        margin-top: 555px;
+        margin-left: 87px;
+        width: 405px;
+    }
+
+    #grodno {
+        position: absolute;
+        margin-top: 359px;
+        margin-left: 81px;
+        width: 343px;
+    }
+
+    #vitebsk {
+        position: absolute;
+        margin-top: 178px;
+        margin-left: 369px;
+        width: 428px;
+    }
+
+    #mogilev {
+        position: absolute;
+        margin-top: 412px;
+        margin-left: 523px;
+        width: 477px;
+    }
+
+    #gomel {
+        position: absolute;
+        margin-top: 601px;
+        margin-left: 450px;
+        width: 445px;
+    }
+
+    #contacts__points>p {
+        position: absolute;
+        top: 307px;
+        left: 472px;
+        font-family: 'Kanit', sans-serif;
+        font-size: 34px;
+    }
+
+    #solid_line {
+        margin-top: 570px;
+        margin-left: 979px;
+        opacity: 0;
+    }
+
+    #contacts__card {
+        margin-left: 1110px;
+        margin-top: -205px;
+        width: 771px;
+        height: 360px;
+    }
+
+    #contacts__card_info>div:first-of-type {
+        margin-top: 57px;
+        margin-left: 45px;
+    }
+
+    #contacts__card_info>div>img {
+        width: 162px;
+    }
+
+    #contacts__card_info_descr {
+        width: 522px;
+    }
+
+    #contacts__card_info>div:last-of-type {
+        margin-top: -225px;
+        margin-left: 237px;
+        font-size: 31px;
+    }
+
+    #footer__menu_social {
+        margin-left: 57px;
+    }
+
+    #footer__menu>ul {
+        gap: 96px;
+        margin-top: 174px;
+        font-size: 30px;
+    }
+
+    #footer__menu>ul>li:first-of-type {
+        width: 121px;
+    }
+
+    #footer__social {
+        width: 21px;
+        margin-top: 1px;
+        margin-bottom: 40px;
+    }
+
+    #logotype {
+        width: 130px;
+    }
+
+    #footer__subscribe {
+        margin-top: 135px;
+        margin-left: 368px;
+    }
+
+    #footer__subscribe>p {
+        font-size: 33px;
+        margin-bottom: 20px;
+    }
+
+    #footer__subscribe>input {
+        height: 66px;
+        width: 399px;
+        margin-left: 0px;
+        margin-top: 6px;
+        border-radius: 7px;
+        border: none;
+        margin-bottom: 2vw;
+        padding-left: 10px;
+        font-size: 39px;
+        font-weight: 400;
+        outline: none;
+    }
+
+    #footer__subscribe>button {
+        margin-left: 16px;
+        height: 73px;
+        width: 180px;
+        font-size: 24px;
+        border-radius: 7px;
+    }
+
+    #footer__subscribe>input::placeholder{
+        padding-left: 15px;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    #geoteg1{
+        opacity: 1 !important;
+        transform: translateX(-3px) translateY(-18px);
+    }
+
+
+}
+
 
 
 
